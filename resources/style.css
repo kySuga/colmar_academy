@@ -1,0 +1,190 @@
+/******* Global Settings *******/
+html {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+}
+
+body {
+line-height: 1.1;
+color: #a5a5a5;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h1, h2 {
+  color: #555;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.3;
+  font-size: 0.77rem;
+}
+
+.container {
+  display: flex;
+}
+
+/******* Header Settings *******/
+header {
+  height: 64px;
+  min-width: 100%;
+  background-color: #fff;
+  z-index: 5;
+  position: fixed;
+}
+
+.container.header {
+  justify-content: center;
+  align-items: center;
+  margin: 16px 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h2 .regular {
+  color: #999;
+  font-weight: normal;
+}
+
+#menu {
+  float: right;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#menu ul {
+  display: flex;
+}
+
+#menu a {
+  color: #999;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: all 0.2s ease-in;
+}
+
+#menu a:hover {
+  color: #333;
+}
+
+/******* Main Settings *******/
+/******* Section One Settings *******/
+.section-one {
+  background-color: #e1e1e1;
+  padding-top: 64px;
+}
+
+.hero.img {
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.hero img {
+  max-width: 100%;
+}
+
+.hero.info {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info p {
+  color: #777;
+  margin: 24px 0;
+}
+
+.info button {
+  background-color: #555;
+  border: 1px solid #a1a1a1;
+  color: #f1f1f1;
+  padding: 8px 38%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.info button:hover {
+  background-color: #b1b1b1;
+  border: 1px solid #a1a1a1;
+}
+
+/******* Section Two Settings *******/
+.primary {
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.primary img, .primary h2, .primary p {
+  max-width: 100%;
+}
+
+.primary h2 {
+  padding-top: 32px;
+}
+
+.secondary {
+  padding: 16px 0;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #e1e1e1;
+}
+
+.box {
+  display: inline-flex;
+  align-items: center;
+}
+
+.box.three {
+  background-color: #e1e1e1;
+}
+
+.secondary .image {
+  width: 35%;
+  height: auto;
+}
+
+.secondary .image img {
+  max-width: 100%;
+  padding: 16px;
+}
+
+.secondary .text {
+  width: 65%;
+  margin-left: 1.77rem;
+}
+
+/******* Section Three Settings *******/
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/******* Section Four Settings *******/
+video {
+  max-width: 100%;
+}
+
+/******* Footer Settings *******/
