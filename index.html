@@ -15,7 +15,7 @@
           <img src="resources/images/ic-logo.svg" alt="Colmar Academy logo">
           <h2>Colmar<span class="regular">Academy</span></h2>
         </div>
-        <div id="menu">
+        <div class="menu">
           <nav>
             <ul>
               <li><a href="#">On campus</a></li>
@@ -58,7 +58,8 @@
           </div>
           <div class="text">
             <h2>It doesn't hurt to keep practicing</h2>
-            <p><q cite="QUOTE-URL">“Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.”</q> <br><span class="quote-name">Emanuel, Sr Strategist at Hiring.com</span></p>
+            <p><q cite="QUOTE-URL">“Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.”</q></p>
+            <p class="quote-name">Emanuel, Sr Strategist at Hiring.com</p>
           </div>
         </div>
         <div class="secondary">
@@ -69,7 +70,7 @@
             <div class="text">
               <h3>Orientation date</h3>
               <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-              <p><a href="#">Read more</a></p>
+              <p class="read-more"><a href="#">Read more</a></p>
             </div>
           </div>
           <div class="box two">
@@ -79,7 +80,7 @@
             <div class="text">
               <h3>Our campus</h3>
               <p>Find which campus is close by you</p>
-              <p><a href="#">Read more</a></p>
+              <p class="read-more"><a href="#">Read more</a></p>
             </div>
           </div>
           <div class="box three">
@@ -89,7 +90,7 @@
             <div class="text">
               <h3>Our guest lecture</h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-              <p><a href="#">Read more</a></p>
+              <p class="read-more"><a href="#">Read more</a></p>
             </div>
           </div>
         </div>
@@ -97,73 +98,95 @@
       <!-- End section two -->
 
       <!-- Start section three -->
-      <div class="container section-three">
+      <div class="section-three">
         <div class="heading">
           <h2>Start learning</h2>
         </div>
-        <div class="courses">
+        <div class="container courses">
           <div class="soft-eng course">
             <img src="resources/images/course-software.jpg" alt="Desktop computer">
-            <h3>Software Engineering</h3>
-            <p>Courses</p>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+            <div class="course-info">
+              <h3>Software Engineering</h3>
+              <p>Courses</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
           </div>
           <div class="comp-art course">
             <img src="resources/images/course-computer-art.jpg" alt="Hand with smartphone">
-            <h3>Computer Art</h3>
-            <p>Courses</p>
-            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+            <div class="course-info">
+              <h3>Computer Art</h3>
+              <p>Courses</p>
+              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+            </div>
           </div>
           <div class="design course">
             <img src="resources/images/course-design.jpg" alt="Person using a twin lens reflex camera">
-            <h3>Design</h3>
-            <p>Courses</p>
-            <p>User Experience Design, User Research, Visual Design</p>
+            <div class="course-info">
+              <h3>Design</h3>
+              <p>Courses</p>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
           </div>
           <div class="data course">
             <img src="resources/images/course-data.jpg" alt="Open laptop">
-            <h3>Data</h3>
-            <p>Courses</p>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
+            <div class="course-info">
+              <h3>Data</h3>
+              <p>Courses</p>
+              <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
           </div>
           <div class="business course">
             <img src="resources/images/course-business.jpg" alt="Chessboard">
-            <h3>Business</h3>
-            <p>Courses</p>
-            <p>Product Development, Business Development, Startup</p>
+            <div class="course-info">
+              <h3>Business</h3>
+              <p>Courses</p>
+              <p>Product Development, Business Development, Startup</p>
+            </div>
           </div>
           <div class="marketing course">
             <img src="resources/images/course-marketing.jpg" alt="Smart watch on wrist being used">
-            <h3>Marketing</h3>
-            <p>Courses</p>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
+            <div class="course-info">
+              <h3>Marketing</h3>
+              <p>Courses</p>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
           </div>
         </div>
       </div>
       <!-- End section three -->
 
       <!-- Start section four -->
-      <div class="container section-four">
+      <div class="section-four">
         <div class="heading">
           <h2>Thesis Exhibit</h2>
         </div>
-        <div class="primary">
-          <video src="resources/videos/thesis.mp4" autoplay poster="posterimage.jpg">
-            Your browser does not support HTML5 video.
-          </video>
-          <h3>Reimagine Urban</h3>
-          <p><q cite="">“Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.”</q></p>
-        </div>
-        <div class="secondary">
-          <div class="box-one">
-            <img src="resources/images/thesis-fisma.jpg" alt="Hand drawing on paper with marker">
-            <h3>Fisma: Design and Prototype</h3>
-            <p>Designer showcase of new prototype product</p>
+        <div class="container">
+          <div class="primary">
+            <video src="resources/videos/thesis.mp4" autoplay poster="posterimage.jpg">
+              Your browser does not support HTML5 video.
+            </video>
+            <h3>Reimagine Urban</h3>
+            <p><q cite="">“Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.”</q></p>
           </div>
-          <div class="box-two">
-            <img src="resources/images/thesis-now-and-then.jpg" alt="View of New York City">
-            <h3>Now and Then</h3>
-            <p>Research study about New York</p>
+          <div class="secondary">
+            <div class="box one">
+              <div class="image">
+                <img src="resources/images/thesis-fisma.jpg" alt="Hand drawing on paper with marker">
+              </div>
+              <div class="text">
+                <h3>Fisma: Design and Prototype</h3>
+                <p>Designer showcase of new prototype product</p>
+              </div>
+            </div>
+            <div class="box two">
+              <div class="image">
+                <img src="resources/images/thesis-now-and-then.jpg" alt="View of New York City">
+              </div>
+              <div class="text">
+                <h3>Now and Then</h3>
+                <p>Research study about New York</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -173,17 +196,19 @@
 
     <!-- Start footer section -->
     <footer>
-    <div class="container footer">
-      <div class="copyright">
-        <p>© 2018 Colmar Academy. All rights reserved</p>
-      </div>
-      <div class="footer-menu">
-        <nav>
-          <ul>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-          </ul>
-        </nav>
+    <div class="footer">
+      <div class="container">
+        <div class="copyright">
+          <p>© 2018 Colmar Academy. All rights reserved</p>
+        </div>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
     </footer>

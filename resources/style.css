@@ -1,4 +1,8 @@
 /******* Global Settings *******/
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Roboto, Arial, sans-serif;
   font-size: 18px;
@@ -7,6 +11,7 @@ html {
 body {
 line-height: 1.1;
 color: #a5a5a5;
+text-align: center;
 }
 
 h1 {
@@ -17,18 +22,27 @@ h2 {
   font-size: 1.5rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: #555;
   font-weight: bold;
 }
 
 p {
-  line-height: 1.3;
-  font-size: 0.77rem;
+  font-size: 0.68rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.018rem;
+}
+
+div {
+  text-align: left;
 }
 
 .container {
   display: flex;
+}
+
+.heading {
+
 }
 
 /******* Header Settings *******/
@@ -61,7 +75,7 @@ h2 .regular {
   font-weight: normal;
 }
 
-#menu {
+.menu {
   float: right;
   margin-left: auto;
   display: flex;
@@ -69,18 +83,18 @@ h2 .regular {
   justify-content: space-around;
 }
 
-#menu ul {
+.menu ul {
   display: flex;
 }
 
-#menu a {
+.menu a {
   color: #999;
   text-decoration: none;
   margin: 0 8px;
   transition: all 0.2s ease-in;
 }
 
-#menu a:hover {
+.menu a:hover {
   color: #333;
 }
 
@@ -101,10 +115,11 @@ h2 .regular {
 }
 
 .hero.info {
-  width: 25%;
+  width: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-right: 6em;
 }
 
 .info p {
@@ -144,17 +159,42 @@ h2 .regular {
   padding-top: 32px;
 }
 
+.primary p {
+  padding-top: 24px;
+}
+
+p.quote-name {
+  padding-top: 1.2rem;
+  font-weight: bold;
+}
+
 .secondary {
   padding: 16px 0;
   width: 40%;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid #e1e1e1;
+}
+
+.section-two .secondary {
+  border-left: 2px solid #f1f1f1;
 }
 
 .box {
   display: inline-flex;
   align-items: center;
+}
+
+.box h3, .box p {
+  padding-bottom: 8px;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: #3BB9FF;
+}
+
+.section-two .box.two {
+  border-top: 3px solid #f1f1f1;
 }
 
 .box.three {
@@ -173,18 +213,70 @@ h2 .regular {
 
 .secondary .text {
   width: 65%;
-  margin-left: 1.77rem;
+  margin-right: 1rem;
 }
 
 /******* Section Three Settings *******/
+.section-three {
+  background-color: #f1f1f1;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 16px 0;
+}
+
 .courses {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 72px;
+  margin-top: 16px;
+}
+
+.course {
+  width: 33%;
+}
+
+.course img {
+  height: auto;
+  max-width: 100%;
+}
+
+.course-info {
+  background-color: #fff;
+  padding: 16px;
 }
 
 /******* Section Four Settings *******/
+.section-four .primary {
+  margin-top: 16px;
+}
+
+.section-four h3 {
+  padding-top: 24px;
+}
+
+.section-four p {
+  padding-top: 8px;
+}
+
 video {
   max-width: 100%;
 }
 
+.section-four .box.one {
+  background-color: #e1e1e1;
+}
+
 /******* Footer Settings *******/
+.footer {
+  height: 72px;
+  border-top: 2px solid #f1f1f1;
+  padding: 16px 24px;
+}
+
+.copyright p, .footer .menu a {
+  font-size: 0.6rem;
+}
