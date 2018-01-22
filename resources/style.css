@@ -70,6 +70,10 @@ header {
   text-transform: uppercase;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 h2 .regular {
   color: #999;
   font-weight: normal;
@@ -96,6 +100,10 @@ h2 .regular {
 
 .menu a:hover {
   color: #333;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 /******* Main Settings *******/
@@ -128,7 +136,7 @@ h2 .regular {
 }
 
 .info button {
-  background-color: #555;
+  background-color: #006888;
   border: 1px solid #a1a1a1;
   color: #f1f1f1;
   padding: 8px 38%;
@@ -141,7 +149,7 @@ h2 .regular {
 }
 
 .info button:hover {
-  background-color: #b1b1b1;
+  background-color: #607B8B;
   border: 1px solid #a1a1a1;
 }
 
@@ -190,7 +198,14 @@ p.quote-name {
 
 .read-more a {
   text-decoration: none;
-  color: #3BB9FF;
+  color: #3299CC;  /* #3BB9FF */
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.read-more a:hover {
+  text-decoration: none;
+  color: 	#87CEEB;
 }
 
 .section-two .box.two {
@@ -279,9 +294,50 @@ video {
 .footer {
   height: 72px;
   border-top: 2px solid #f1f1f1;
+  background-color: #555;
   padding: 16px 24px;
 }
 
 .copyright p, .footer .menu a {
   font-size: 0.6rem;
+}
+
+/******* MOBILE *******/
+/******* Section Four Settings *******/
+@media only screen and (max-width: 1071px) {
+  .course {
+    width: 46%;
+  }
+}
+
+/******* Section One Settings *******/
+@media only screen and (max-width: 1014px) and (min-width: 873px) {
+  .info button {
+    padding: 8px 35%;
+  }
+}
+
+@media only screen and (max-width: 872px) and (min-width: 670px) {
+  .info button {
+    padding: 8px 28%;
+  }
+}
+
+/******* Header Settings *******/
+@media only screen and (max-width: 736px) and (min-width: 319px) {
+  .logo, .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+  }
+
+  .mobile-menu li {
+    margin: 0 1rem;
+  }
 }
