@@ -302,11 +302,61 @@ video {
   font-size: 0.6rem;
 }
 
+/******************************************************************************/
 /******* MOBILE *******/
+/******* Footer Settings *******/
+@media only screen and (max-width: 736px) and (min-width: 319px) {
+  .footer .container {
+    display: initial;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .copyright p {
+    text-align: center;
+  }
+}
+
 /******* Section Four Settings *******/
 @media only screen and (max-width: 1071px) {
   .course {
     width: 46%;
+  }
+}
+
+@media only screen and (max-width: 736px) and (min-width: 319px) {
+  .section-four .primary {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: auto;
+  }
+
+  .section-four .primary h3, .section-four .primary p {
+    display: none;
+  }
+
+  .section-four .secondary {
+    display: none;
+  }
+}
+
+/******* Section Three Settings *******/
+@media only screen and (max-width: 736px) and (min-width: 319px) {
+  .courses {
+    padding: 0 0 8px 0;
+  }
+
+  .course {
+    width: 100%;
+  }
+}
+
+/******* Section Two Settings *******/
+@media only screen and (max-width: 736px) and (min-width: 319px) {
+  .section-two .primary {
+    display: none;
   }
 }
 
@@ -320,6 +370,25 @@ video {
 @media only screen and (max-width: 872px) and (min-width: 670px) {
   .info button {
     padding: 8px 28%;
+  }
+}
+
+@media only screen and (max-width: 736px) and (min-width: 319px) {
+  .hero.img {
+    margin: 0;
+  }
+
+  .hero.img, .hero.info {
+    width: auto;
+  }
+
+  .hero.info {
+    margin: 32px 16px;
+    padding-right: 0;
+  }
+
+  .hero.text p {
+    font-size: 1rem;
   }
 }
 
@@ -339,5 +408,12 @@ video {
 
   .mobile-menu li {
     margin: 0 1rem;
+  }
+}
+
+/******* Global Settings *******/
+@media only screen and (max-width: 736px) and (min-width: 319px) {
+.container {
+  flex-wrap: wrap;
   }
 }
