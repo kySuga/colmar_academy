@@ -173,7 +173,6 @@ p.quote-name {
 }
 
 .secondary {
-  padding: 16px 0;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -194,7 +193,7 @@ p.quote-name {
 
 .read-more a {
   text-decoration: none;
-  color: #3299CC;  /* #3BB9FF */
+  color: #3299CC;
   cursor: pointer;
   transition: all 0.2s ease-in;
 }
@@ -213,7 +212,6 @@ p.quote-name {
 }
 
 .secondary .image {
-  width: 35%;
   height: auto;
 }
 
@@ -241,6 +239,7 @@ p.quote-name {
 
 .courses {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 0 56px;
   padding-bottom: 16px;
@@ -345,20 +344,60 @@ video {
   }
 }
 
-@media only screen and (max-width: 736px) and (min-width: 319px) {
+@media only screen and (max-width: 737px) and (min-width: 319px) {
   .courses {
-    padding: 0 0 8px 0;
+    padding: 0;
   }
 
   .course {
     width: 100%;
   }
+
+  .course img {
+    width: 100%;
+  }
 }
 
 /******* Section Two Settings *******/
+@media only screen and (min-width: 737px) {
+  .secondary .image-mobile {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 736px) and (min-width: 319px) {
   .section-two .primary {
     display: none;
+  }
+
+  .secondary {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    display: block;
+    padding: 16px 16px 32px 16px;
+    width: 100%;
+  }
+
+  .secondary .image img {
+    padding: 0;
+    width: 100%;
+  }
+
+  .secondary .text {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .section-two .box.two {
+    border-top: inherit;
+  }
+
+  .box.three {
+    background-color: transparent;
   }
 }
 
@@ -401,17 +440,27 @@ video {
   }
 
   #mobile-menu {
-    display: flex;
+    display: block;
+    width: 100%;
+  }
+
+  #mobile-menu nav {
+    display: block;
+    width: 100%;
   }
 
   #mobile-menu ul {
     display: flex;
+    justify-content: space-evenly;
   }
 
-  #mobile-menu li {
-    margin: 0 1rem;
+  #mobile-menu a {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
   }
-}
 
 /******* Global Settings *******/
 @media only screen and (max-width: 736px) and (min-width: 319px) {
