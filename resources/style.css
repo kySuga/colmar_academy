@@ -41,14 +41,10 @@ div {
   display: flex;
 }
 
-.heading {
-
-}
-
 /******* Header Settings *******/
 header {
   height: 64px;
-  min-width: 100%;
+  width: 100%;
   background-color: #fff;
   z-index: 5;
   position: fixed;
@@ -102,7 +98,7 @@ h2 .regular {
   color: #333;
 }
 
-.mobile-menu {
+#mobile-menu {
   display: none;
 }
 
@@ -343,6 +339,12 @@ video {
 }
 
 /******* Section Three Settings *******/
+@media only screen and (max-width: 911px) and (min-width: 737px) {
+.course {
+    width: 44%;
+  }
+}
+
 @media only screen and (max-width: 736px) and (min-width: 319px) {
   .courses {
     padding: 0 0 8px 0;
@@ -398,15 +400,15 @@ video {
     display: none;
   }
 
-  .mobile-menu {
+  #mobile-menu {
     display: flex;
   }
 
-  .mobile-menu ul {
+  #mobile-menu ul {
     display: flex;
   }
 
-  .mobile-menu li {
+  #mobile-menu li {
     margin: 0 1rem;
   }
 }
